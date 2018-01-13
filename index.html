@@ -1,4 +1,32 @@
-<h>Hello1</h>
-Color judging game built in javascript
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+	<h1>The Great
+	<br>
+	 <span id = "colorDisplay">RGB</span> 
+	 <br>
+	Color Game</h1>
 
-There are two levels of the game : EASY and HARD The rules of the game are simple : When the user clicks the NEW COLORS tab, the displayed RGB values will be refreshed and the user needs to guess the correct color which represents the given RGB color values. IN the easy level, the user is given three colors to choose from and in the hard level, six colors for the same.
+	<div id = "stripe">
+		<button id="reset">New Colors</button>
+		<span id = "message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+
+	<div id = "container">
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+		<div class = "square"></div>
+	</div>
+
+<script type="text/javascript" src = "colorGame.js"></script>
+</body>
+</html>
